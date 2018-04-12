@@ -14,4 +14,11 @@ describe('#average', () => {
     isNaN(avg).should.be.true
     done()
   })
+  
+  // new test
+  it('should return the average of array', done => {
+    const avg = average([1, 2, 3])
+    avg.should.equal(2)
+    done()
+  })
 })
